@@ -1,0 +1,53 @@
+.sign_in{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+.form_login{
+    padding-top: 50px;
+}
+.title_login{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 3em;
+    color: #060F6F;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.login{
+    width: 100%;
+    justify-content: center;
+}
+.login label{
+    font-family: 'Poppins';
+    color: #4E87F7;
+    font-size: 1.3em;
+    padding: 15px 0;
+}
+.login .in{
+    border-radius: 20px;
+    border: 2px solid #4E87F7;
+    width: 300px;
+    padding: 0 10px;
+}
+.container_button{
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+}
+.button_iniciar_sesion{
+    border: none;
+    background-color: #4EF7BA;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.text_registro{
+    text-align: center;
+    font-family: 'Poppins';
+    padding-bottom: 30px;
+}
+@media  (min-width: 990px){
+    .sign_in{
+        height: auto;
+    }
+}

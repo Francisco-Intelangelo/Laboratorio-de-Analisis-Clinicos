@@ -1,0 +1,51 @@
+.containerHome{
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0;
+}
+.sacar-turno, .ver-resultados{
+    list-style: none;
+    width: 200px;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    background-color: #4EF7BA;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #060F6F;
+}
+.sacar-turno a, .ver-resultados a{
+    text-decoration: none;
+}
+
+.opciones{
+    width: 100%;
+}
+.img_banner{
+    padding: 30px 50px;
+}
+.preguntas{
+    padding: 80px 0;
+}
+.title_accordion{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 2.3em;
+    color: #060F6F;
+}
+
+
+@media (max-width: 990px) {
+    .buttons{
+        padding: 90px 0;
+    }
+
+    .titulo{
+        width: 20%;
+    }
+}

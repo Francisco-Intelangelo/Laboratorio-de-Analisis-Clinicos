@@ -1,0 +1,6 @@
+export * from "./Home/Home"
+export * from "./Estudios/Estudios"
+export * from "./Nosotros/Nosotros"
+export * from "./Registrarse/Registrarse"
+export * from "./Ingresar/Ingresar"
+export * from "./Preguntas/Preguntas"

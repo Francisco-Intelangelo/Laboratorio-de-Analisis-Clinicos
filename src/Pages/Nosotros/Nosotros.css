@@ -1,0 +1,48 @@
+
+.historia{
+    padding: 50px 20px 10px;
+}
+.titulo{
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+.historia p{
+    text-align: justify;
+}
+.texto .historia_continuacion{
+    padding: 0 20px;
+}
+.historia_continuacion p{
+    text-align: justify;
+}
+.costado{
+    padding: 20px 20px;
+}
+.descripcion{
+    text-align: center;
+}
+.descripcion .subtitulo{
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+@media (min-width: 990px){
+    .img_principal{
+        align-items: center;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .img{
+        height: 60vh;
+    }
+    .texto{
+    display: flex;
+    padding: 50px 10px;
+    }
+    .texto .historia .titulo{
+    text-align: start;
+    color: rgb(0, 0, 0);
+    }
+    .historia p{
+    text-align: justify;
+    }
+}
