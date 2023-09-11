@@ -1,0 +1,36 @@
+.container_formRegister{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form_register{
+    padding-top: 50px;
+}
+
+.form_register .titleRegister{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 3em;
+    color: #060F6F;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.form_register .label{
+    font-family: 'Poppins';
+    color: #4E87F7;
+    font-size: 1.3em;
+    padding: 15px 0;
+}
+.form_register .input, .input_data{
+    border-radius: 20px;
+    border: 2px solid #4E87F7;
+    width: 300px;
+    padding: 0 10px;
+}
+.form_register .send{
+    border: none;
+    background-color: #4EF7BA;
+    padding: 5px 10px;
+    border-radius: 20px;
+}

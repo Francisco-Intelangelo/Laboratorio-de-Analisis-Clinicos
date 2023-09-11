@@ -46,6 +46,9 @@
     font-family: 'Poppins';
     padding-bottom: 30px;
 }
+.button_registro:hover{
+    background: none;
+}
 @media  (min-width: 990px){
     .sign_in{
         height: auto;
