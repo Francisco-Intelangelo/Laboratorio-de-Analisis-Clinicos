@@ -7,9 +7,9 @@
     display: flex;
     justify-content: space-evenly;
     padding: 150px 0;
-}
-.sacar-turno, .ver-resultados{
     list-style: none;
+}
+.sacar-turno a, .ver-resultados a{
     width: 200px;
     border: none;
     font-family: 'Raleway';
@@ -17,7 +17,7 @@
     background-color: #4EF7BA;
     border-radius: 20px;
     padding: 10px 30px;
-    color: #060F6F;
+    color: #4E87F7;
 }
 .sacar-turno a, .ver-resultados a{
     text-decoration: none;
