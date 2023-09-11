@@ -17,10 +17,13 @@
     background-color: #4EF7BA;
     border-radius: 20px;
     padding: 10px 30px;
-    color: #4E87F7;
+    color: #1764ff;
 }
 .sacar-turno a, .ver-resultados a{
     text-decoration: none;
+}
+a:hover{
+    background-color: #49dda7;
 }
 
 .opciones{
@@ -42,7 +45,11 @@
 
 @media (max-width: 990px) {
     .buttons{
-        padding: 90px 0;
+        padding: 40px 0;
+        flex-direction: column;
+    }
+    .sacar-turno, .ver-resultados{
+        padding: 20px 0;
     }
 
     .titulo{

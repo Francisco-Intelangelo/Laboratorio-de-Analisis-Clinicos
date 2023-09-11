@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 
 const accordionStyles = {
@@ -11,10 +12,12 @@ const accordionTitleStyles = {
     padding: '5px',
     background: '#21aeca',
 };
+
 const accordionContentStyles = {
     padding: '5px',
     background: '#39d9d2',
 };
+
 const AccordionSection = ({section, isActiveSection, setActiveIndex, sectionIndex}) =>{
     const toggleSection = () => {
         const nextIndex = isActiveSection ? null : sectionIndex;
