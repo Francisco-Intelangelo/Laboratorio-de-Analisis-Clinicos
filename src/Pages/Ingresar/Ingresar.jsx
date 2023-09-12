@@ -1,12 +1,10 @@
-import "./Ingresar.css"
 import { useRef } from 'react';
 import {useForm} from 'react-hook-form';
 import '../Registrarse/Registrarse';
 import { NavLink } from 'react-router-dom';
+import "./Ingresar.css"
 
-const  errorStyle = {
-    color: 'red',
-};
+
 
 export const Ingresar = () => {
     /* The code is using the `useForm` hook from the `react-hook-form` library to handle form validation
@@ -44,8 +42,8 @@ export const Ingresar = () => {
                             required: true, 
                             minLength: 4 
                         })}/>
-                        {errors.user?.type === "required" && <p style={errorStyle}>Nombre de usuario requerido</p>}
-                        {errors.user?.type === "minLength" && (<p style={errorStyle}>Nombre debe ser mayor a 3 caracteres</p>)}
+                        {errors.user?.type === "required" && <p className='error'>Nombre de usuario requerido</p>}
+                        {errors.user?.type === "minLength" && (<p className='error'>Nombre debe ser mayor a 3 caracteres</p>)}
                     <div>
                     </div>
                     <div>
@@ -61,7 +59,7 @@ export const Ingresar = () => {
                                 message: "Contraseña debe ser mayor a 8 caracteres",
                             }, 
                         })}/>
-                        {errors.password && <p style={errorStyle}>{errors.password.message}</p>}
+                        {errors.password && <p className='error'>{errors.password.message}</p>}
                     </div>  
                 </div>
                 <div className='container_button'>

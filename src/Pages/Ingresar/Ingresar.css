@@ -30,6 +30,9 @@
     width: 300px;
     padding: 0 10px;
 }
+.error{
+    color: rgb(233, 0, 0);
+}
 .container_button{
     padding: 20px 0;
     justify-content: center;
@@ -48,9 +51,4 @@
 }
 .button_registro:hover{
     background: none;
-}
-@media  (min-width: 990px){
-    .sign_in{
-        height: auto;
-    }
 }
