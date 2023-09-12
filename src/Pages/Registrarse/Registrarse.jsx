@@ -1,7 +1,10 @@
 import { useRef } from 'react';
 import {useForm} from 'react-hook-form';
 import './Registrarse.css';
-//import styles from "./Registro.module.css"
+
+const  errorStyle = {
+    color: 'red',
+};
 
 export const Registrarse = () => {
 
@@ -53,7 +56,7 @@ export const Registrarse = () => {
                                 <input type="text" className="input" name='name' {...register('name', {
                                 required: true,
                                 })}/>
-                                {errors.name?.type === "required" && <p>Nombre requerido</p>}
+                                {errors.name?.type === "required" && <p style={errorStyle}>Nombre requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>Apellido:</label>
@@ -64,7 +67,7 @@ export const Registrarse = () => {
                                 value: true,
                                 }
                                 })}/>
-                                {errors.last_name?.type === "required" && <p>Apellido requerido</p>}
+                                {errors.last_name?.type === "required" && <p style={errorStyle}>Apellido requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>E-mail:</label>
@@ -79,7 +82,7 @@ export const Registrarse = () => {
                                 value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
                                 },
                                 })}/>
-                                {errors.email?.type === "required" && <p>Email requerido</p>}
+                                {errors.email?.type === "required" && <p style={errorStyle}>Email requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>DNI:</label>   
@@ -88,7 +91,7 @@ export const Registrarse = () => {
                                 <input type="text" className="input" name='dni' {...register('dni', {
                                 required: true,
                                 })}/>
-                                {errors.dni?.type === "required" && <p>DNI requerido</p>}
+                                {errors.dni?.type === "required" && <p style={errorStyle}>DNI requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>Teléfono:</label>
@@ -97,7 +100,7 @@ export const Registrarse = () => {
                                 <input type="tel" className="input" name='phone' {...register('phone', {
                                 required: true
                                 })}/>
-                                {errors.phone?.type === "required" && <p>Teléfono requerido</p>}
+                                {errors.phone?.type === "required" && <p style={errorStyle}>Teléfono requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>Domicilio:</label>
@@ -106,7 +109,7 @@ export const Registrarse = () => {
                                 <input type="text" className="input" name='adress' {...register('adress', {
                                 required: true
                                 })}/>
-                                {errors.adress?.type === "required" && <p>Domicilio requerido</p>}
+                                {errors.adress?.type === "required" && <p style={errorStyle}>Domicilio requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>Fecha de Nacimiento:</label>
@@ -117,7 +120,7 @@ export const Registrarse = () => {
                                 value: true,
                                 }
                                 })}/>
-                                {errors.date?.type === "required" && <p>Fecha requerida</p>}
+                                {errors.date?.type === "required" && <p style={errorStyle}>Fecha requerida</p>}
                             </div>
                             <div>
                                 <label className='label'>Localidad/Provincia:</label>
@@ -128,7 +131,7 @@ export const Registrarse = () => {
                                 value: true,
                                 }
                                 })}/>
-                                {errors.city?.type === "required" && <p>Campo requerido</p>}
+                                {errors.city?.type === "required" && <p style={errorStyle}>Campo requerido</p>}
                             </div>
                             <div>
                                 <label className='label'>Usuario:</label>
@@ -138,8 +141,8 @@ export const Registrarse = () => {
                                 required: true,
                                 minLength: 4
                                 })}/>
-                                {errors.user?.type === "required" && <p>Nombre de usuario requerido</p>}
-                                {errors.user?.type === "minLength" && (<p>Nombre debe ser mayor a 3 caracteres</p>)}
+                                {errors.user?.type === "required" && <p style={errorStyle}>Nombre de usuario requerido</p>}
+                                {errors.user?.type === "minLength" && (<p style={errorStyle}>Nombre debe ser mayor a 3 caracteres</p>)}
                             </div>
                             <div>
                                 <label className='label'>Contraseña:</label>
@@ -154,7 +157,7 @@ export const Registrarse = () => {
                                 message: "Contraseña debe ser mayor a 8 caracteres",
                                 }, 
                                 })}/>
-                                {errors.password && <p>{errors.password.message}</p>}
+                                {errors.password && <p style={errorStyle}>{errors.password.message}</p>}
                             </div>
                         </div>
                         <div className='form_div_div'>
@@ -162,14 +165,14 @@ export const Registrarse = () => {
                                 <label className='label' >Confirmar contraseña:</label>  
                             </div>
                             <div>
-                                <input type="confirmPass" className="input_data" {...register('confirmPass', {
+                                <input type="password" className="input_data" name='confirmPass' {...register('confirmPass', {
                                 required: {
                                 value: true,
                                 },
                                 validate: (value) =>
                                 value === password.current || "Las contraseñas no coinciden",
                                 })} />
-                                {errors.confirmPass && (<p>{errors.confirmPass.message}</p>)}
+                                {errors.confirmPass && (<p style={errorStyle}>{errors.confirmPass.message}</p>)}
                             </div>   
                         </div>
                     </div>
