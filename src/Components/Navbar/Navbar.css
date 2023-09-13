@@ -48,6 +48,9 @@ nav ul li a:not(.active):hover{
     background-color: #49dda7;
     border-radius: 20px;
 }
+nav .title:hover{
+    background-color: transparent;
+}
 nav .menu{
     display: none;
     position: absolute;

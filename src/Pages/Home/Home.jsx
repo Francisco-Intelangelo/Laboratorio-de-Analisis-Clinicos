@@ -54,7 +54,7 @@ export const Home = () => {
                 </section>
                 <section className="preguntas">
                     <h3 className='title_accordion'>Preguntas Frecuentes</h3>
-                    <Accordion sections = {accordionData} />
+                    <Accordion sections = {accordionData} className="accordion"/>
                 </section>
             </div>
         </div>
