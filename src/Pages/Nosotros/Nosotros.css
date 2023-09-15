@@ -21,14 +21,18 @@
     font-size: 2em;
     color: #060F6F;
 }
+.containerTextoHistoria{
+    display: flex;
+    justify-content: center;
+}
 .textoHistoria{
     text-align: justify;
     padding: 0 0 50px;
     font-family: 'Poppins';
     font-size: 1em;
     color: #000000;
+    width: 90%;
 }
-
 .containerPolitica{
     text-align: center;
 }
@@ -66,6 +70,7 @@
 @media (min-width: 900px) {
     .textoHistoria{
         padding: 0 30px 50px;
+        width: 60%;
     }
     .containerPuntos{
         display: flex;

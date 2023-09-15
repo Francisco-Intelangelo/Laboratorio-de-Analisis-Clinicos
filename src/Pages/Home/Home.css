@@ -44,16 +44,12 @@ a:hover{
     color: #060F6F;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 600px) {
     .buttons{
         padding: 40px 0;
         flex-direction: column;
     }
     .sacar-turno, .ver-resultados{
         padding: 20px 0;
-    }
-
-    .titulo{
-        width: 20%;
     }
 }

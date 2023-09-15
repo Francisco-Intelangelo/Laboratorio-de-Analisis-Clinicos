@@ -8,25 +8,32 @@ import Accordion from '../../Components/Accordion/Accordion';
 
 const accordionData = [
     {
-        title: "Pregunta 1",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                In iste quibusdam rem quidem veniam explicabo, quia ratione hic 
-                officia, inventore magnam autem ipsam perferendis, saepe quaerat 
-                quod voluptates? Quas, eaque.`,
+        title: "¿Aceptan mi seguro médico para cubrir los costos de los análisis?",
+        content: `Sí, en el Laboratorio Clínico de Confianza aceptamos la mayoría de 
+        los seguros médicos para cubrir los costos de los análisis. Le recomendamos 
+        que nos proporcione los detalles de su seguro cuando programe su cita, y nuestro 
+        personal le ayudará a verificar la cobertura específica de su plan.`,
     },
     {
-        title: "Pregunta 2",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                In iste quibusdam rem quidem veniam explicabo, quia ratione hic 
-                officia, inventore magnam autem ipsam perferendis, saepe quaerat 
-                quod voluptates? Quas, eaque.`,
+        title: "¿Cuánto tiempo suelen esperar los pacientes para ser atendidos?",
+        content: `En el Laboratorio Clínico de Confianza, nos esforzamos por mantener 
+        los tiempos de espera al mínimo. Por lo general, nuestros pacientes son atendidos 
+        en un plazo de 15 a 30 minutos desde su llegada al laboratorio. Sin embargo, en 
+        ciertos momentos del día o debido a circunstancias inesperadas, puede haber variaciones
+        en los tiempos de espera. Apreciamos su paciencia y estamos comprometidos a brindarle 
+        un servicio eficiente y de calidad.`,
     },
     {
-        title: "Pregunta 3",
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                In iste quibusdam rem quidem veniam explicabo, quia ratione hic 
-                officia, inventore magnam autem ipsam perferendis, saepe quaerat 
-                quod voluptates? Quas, eaque.`,
+        title: "¿Qué debo hacer para prepararme adecuadamente para un análisis?",
+        content: <p><b>Siga instrucciones:</b> Siga las instrucciones que le proporcionamos para cada análisis.
+        <br/>
+        <b>Posible ayuno:</b> Si es necesario, ayune según las indicaciones antes del análisis.
+        <br/>
+        <b>Tome medicamentos:</b> Tome sus medicamentos según lo habitual, a menos que se le indique lo contrario.
+        <br/>        
+        <b>Comodidad:</b> Vístase con ropa cómoda y de fácil acceso.
+        <br/>
+        Si tiene dudas, pregunte al programar su cita o en su visita. Estamos aquí para ayudar.</p>
     },
 ];
 
