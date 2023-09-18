@@ -16,6 +16,7 @@
     text-align: center;
     padding-bottom: 50px;
 }
+
 .form_register .label{
     font-family: 'Poppins';
     color: #4E87F7;
@@ -33,4 +34,14 @@
     background-color: #4EF7BA;
     padding: 5px 10px;
     border-radius: 20px;
+}
+
+@media(min-width: 990px){
+    .form_register .form_div{
+        display: flex;
+        flex-direction: row;
+    }
+    .form_register .form_div .containerBlock{
+        padding: 0 20px;
+    }
 }

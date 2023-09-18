@@ -49,131 +49,137 @@ export const Registrarse = () => {
                     <h1 className="titleRegister">Registro</h1>
                     <div className='sd'>
                         <div className='form_div'>
-                            <div>
-                                <label className='label'>Nombre:</label>
+                            <div className='containerBlock'>
+                                <div>
+                                    <label className='label'>Nombre:</label>
+                                </div>
+                                <div>
+                                    <input type="text" className="input" name='name' {...register('name', {
+                                    required: true,
+                                    })}/>
+                                    {errors.name?.type === "required" && <p style={errorStyle}>Nombre requerido</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>Apellido:</label>
+                                </div>
+                                <div>
+                                    <input type="text" className="input" name='last_name' {...register('last_name', {
+                                    required: {
+                                    value: true,
+                                    }
+                                    })}/>
+                                    {errors.last_name?.type === "required" && <p style={errorStyle}>Apellido requerido</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>E-mail:</label>
+                                </div>
+                                <div>
+                                    <input type="email" className="input" name='email' {...register('email', {
+                                    required: {
+                                    value: true,
+                                    menssage: "Email requerido",
+                                    },
+                                    pattern: {
+                                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                                    },
+                                    })}/>
+                                    {errors.email?.type === "required" && <p style={errorStyle}>Email requerido</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>DNI:</label>   
+                                </div>
+                                <div>
+                                    <input type="text" className="input" name='dni' {...register('dni', {
+                                    required: true,
+                                    })}/>
+                                    {errors.dni?.type === "required" && <p style={errorStyle}>DNI requerido</p>}
+                                </div>
                             </div>
-                            <div>
-                                <input type="text" className="input" name='name' {...register('name', {
-                                required: true,
-                                })}/>
-                                {errors.name?.type === "required" && <p style={errorStyle}>Nombre requerido</p>}
+                            <div className='containerBlock'>
+                                <div>
+                                    <label className='label'>Teléfono:</label>
+                                </div>
+                                <div>
+                                    <input type="tel" className="input" name='phone' {...register('phone', {
+                                    required: true
+                                    })}/>
+                                    {errors.phone?.type === "required" && <p style={errorStyle}>Teléfono requerido</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>Domicilio:</label>
+                                </div>
+                                <div>
+                                    <input type="text" className="input" name='adress' {...register('adress', {
+                                    required: true
+                                    })}/>
+                                    {errors.adress?.type === "required" && <p style={errorStyle}>Domicilio requerido</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>Fecha de Nacimiento:</label>
+                                </div>
+                                <div>
+                                    <input type="date" className='input' name='date' {...register('date', {
+                                    required: {
+                                    value: true,
+                                    }
+                                    })}/>
+                                    {errors.date?.type === "required" && <p style={errorStyle}>Fecha requerida</p>}
+                                </div>
+                                <div>
+                                    <label className='label'>Localidad/Provincia:</label>
+                                </div>
+                                <div>
+                                    <input type="text" className='input' name='city' {...register('city', {
+                                    required: {
+                                    value: true,
+                                    }
+                                    })}/>
+                                    {errors.city?.type === "required" && <p style={errorStyle}>Campo requerido</p>}
+                                </div>
                             </div>
-                            <div>
-                                <label className='label'>Apellido:</label>
+                            <div className='containerBlock'>
+                                <div>
+                                    <label className='label'>Usuario:</label>
+                                </div>
+                                <div>
+                                    <input type="text" className="input_data" name='user' {...register('user' , {
+                                    required: true,
+                                    minLength: 4
+                                    })}/>
+                                    {errors.user?.type === "required" && <p style={errorStyle}>Nombre de usuario requerido</p>}
+                                    {errors.user?.type === "minLength" && (<p style={errorStyle}>Nombre debe ser mayor a 3 caracteres</p>)}
+                                </div>
+                                <div>
+                                    <label className='label' id='contraseña'>Contraseña:</label>
+                                </div>
+                                <div>
+                                    <input type="password" className="input_data" name='password' {...register('password', {
+                                    required: {
+                                    value: true,
+                                    },
+                                    minLength: {
+                                    value: 8,
+                                    message: "Contraseña debe ser mayor a 8 caracteres",
+                                    }, 
+                                    })}/>
+                                    {errors.password && <p style={errorStyle}>{errors.password.message}</p>}
+                                </div>
+                                <div className='form_div_div'>
+                                    <div className='pass'>
+                                        <label className='label' id='confirmarContraseña'>Confirmar contraseña:</label>  
+                                    </div>
+                                    <div>
+                                        <input type="password" className="input_data" name='confirmPass' {...register('confirmPass', {
+                                        required: {
+                                        value: true,
+                                        },
+                                        validate: (value) =>
+                                        value === password.current || "Las contraseñas no coinciden",
+                                        })} />
+                                        {errors.confirmPass && (<p style={errorStyle}>{errors.confirmPass.message}</p>)}
+                                    </div>   
+                                </div>
                             </div>
-                            <div>
-                                <input type="text" className="input" name='last_name' {...register('last_name', {
-                                required: {
-                                value: true,
-                                }
-                                })}/>
-                                {errors.last_name?.type === "required" && <p style={errorStyle}>Apellido requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>E-mail:</label>
-                            </div>
-                            <div>
-                                <input type="email" className="input" name='email' {...register('email', {
-                                required: {
-                                value: true,
-                                menssage: "Email requerido",
-                                },
-                                pattern: {
-                                value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                                },
-                                })}/>
-                                {errors.email?.type === "required" && <p style={errorStyle}>Email requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>DNI:</label>   
-                            </div>
-                            <div>
-                                <input type="text" className="input" name='dni' {...register('dni', {
-                                required: true,
-                                })}/>
-                                {errors.dni?.type === "required" && <p style={errorStyle}>DNI requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>Teléfono:</label>
-                            </div>
-                            <div>
-                                <input type="tel" className="input" name='phone' {...register('phone', {
-                                required: true
-                                })}/>
-                                {errors.phone?.type === "required" && <p style={errorStyle}>Teléfono requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>Domicilio:</label>
-                            </div>
-                            <div>
-                                <input type="text" className="input" name='adress' {...register('adress', {
-                                required: true
-                                })}/>
-                                {errors.adress?.type === "required" && <p style={errorStyle}>Domicilio requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>Fecha de Nacimiento:</label>
-                            </div>
-                            <div>
-                                <input type="date" className='input' name='date' {...register('date', {
-                                required: {
-                                value: true,
-                                }
-                                })}/>
-                                {errors.date?.type === "required" && <p style={errorStyle}>Fecha requerida</p>}
-                            </div>
-                            <div>
-                                <label className='label'>Localidad/Provincia:</label>
-                            </div>
-                            <div>
-                                <input type="text" className='input' name='city' {...register('city', {
-                                required: {
-                                value: true,
-                                }
-                                })}/>
-                                {errors.city?.type === "required" && <p style={errorStyle}>Campo requerido</p>}
-                            </div>
-                            <div>
-                                <label className='label'>Usuario:</label>
-                            </div>
-                            <div>
-                                <input type="text" className="input_data" name='user' {...register('user' , {
-                                required: true,
-                                minLength: 4
-                                })}/>
-                                {errors.user?.type === "required" && <p style={errorStyle}>Nombre de usuario requerido</p>}
-                                {errors.user?.type === "minLength" && (<p style={errorStyle}>Nombre debe ser mayor a 3 caracteres</p>)}
-                            </div>
-                            <div>
-                                <label className='label'>Contraseña:</label>
-                            </div>
-                            <div>
-                                <input type="password" className="input_data" name='password' {...register('password', {
-                                required: {
-                                value: true,
-                                },
-                                minLength: {
-                                value: 8,
-                                message: "Contraseña debe ser mayor a 8 caracteres",
-                                }, 
-                                })}/>
-                                {errors.password && <p style={errorStyle}>{errors.password.message}</p>}
-                            </div>
-                        </div>
-                        <div className='form_div_div'>
-                            <div className='pass'>
-                                <label className='label' >Confirmar contraseña:</label>  
-                            </div>
-                            <div>
-                                <input type="password" className="input_data" name='confirmPass' {...register('confirmPass', {
-                                required: {
-                                value: true,
-                                },
-                                validate: (value) =>
-                                value === password.current || "Las contraseñas no coinciden",
-                                })} />
-                                {errors.confirmPass && (<p style={errorStyle}>{errors.confirmPass.message}</p>)}
-                            </div>   
                         </div>
                     </div>
                     <div className='container_button'>

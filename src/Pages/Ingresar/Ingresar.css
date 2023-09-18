@@ -1,10 +1,8 @@
 .sign_in{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 70vh;
-}
-.form_login{
-    padding-top: 50px;
 }
 .title_login{
     font-family: 'Raleway';
@@ -47,7 +45,7 @@
 .text_registro{
     text-align: center;
     font-family: 'Poppins';
-    padding-bottom: 30px;
+    margin: 0;
 }
 .button_registro:hover{
     background: none;
