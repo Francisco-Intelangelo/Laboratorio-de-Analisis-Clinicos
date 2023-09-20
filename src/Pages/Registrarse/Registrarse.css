@@ -40,7 +40,6 @@
     .form_register .form_div{
         display: flex;
         flex-direction: row;
-        height: 45vh;
     }
     .form_register .form_div .containerBlock{
         padding: 0 20px;

@@ -41,6 +41,7 @@ export const Home = () => {
     return (
         <div>
             <div className="containerHome">
+            <h1 className='titleHome'>Bienvenido</h1>
                 <section className="banner">
                     <Slider/>
                     <div className="buttons">
