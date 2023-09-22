@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import {useForm} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import './Registrarse.css';
 
 const  errorStyle = {
@@ -17,9 +17,6 @@ export const Registrarse = () => {
             email:'',
             dni:'',
             phone:'',
-            adress:'',
-            date:'',
-            city:'',
             user:'',
             password:'',
             confirmPass:'',
@@ -34,14 +31,10 @@ export const Registrarse = () => {
     const password = useRef(null);
     password.current = watch("password", "");
 
-    /* The `const onSubmit` variable is a function that is called when the form is submitted. It uses the
-    `handleSubmit` function from the `react-hook-form` library to handle form submission. */
     const onSubmit = handleSubmit((data) =>{
         console.log(data);
         reset(); 
     });
-
-
     return (
         <div className="container_formRegister">
             <div className='register'>
@@ -105,39 +98,6 @@ export const Registrarse = () => {
                                     })}/>
                                     {errors.phone?.type === "required" && <p style={errorStyle}>Teléfono requerido</p>}
                                 </div>
-                                <div>
-                                    <label className='label'>Domicilio:</label>
-                                </div>
-                                <div>
-                                    <input type="text" className="input" name='adress' {...register('adress', {
-                                    required: true
-                                    })}/>
-                                    {errors.adress?.type === "required" && <p style={errorStyle}>Domicilio requerido</p>}
-                                </div>
-                                <div>
-                                    <label className='label'>Fecha de Nacimiento:</label>
-                                </div>
-                                <div>
-                                    <input type="date" className='input' name='date' {...register('date', {
-                                    required: {
-                                    value: true,
-                                    }
-                                    })}/>
-                                    {errors.date?.type === "required" && <p style={errorStyle}>Fecha requerida</p>}
-                                </div>
-                                <div>
-                                    <label className='label'>Localidad/Provincia:</label>
-                                </div>
-                                <div>
-                                    <input type="text" className='input' name='city' {...register('city', {
-                                    required: {
-                                    value: true,
-                                    }
-                                    })}/>
-                                    {errors.city?.type === "required" && <p style={errorStyle}>Campo requerido</p>}
-                                </div>
-                            </div>
-                            <div className='containerBlock'>
                                 <div>
                                     <label className='label'>Usuario:</label>
                                 </div>
