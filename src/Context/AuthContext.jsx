@@ -14,18 +14,18 @@ export const UseAuth = () => {
 
 // eslint-disable-next-line react/prop-types
 export function AuthProvider({children}) {
-    const register = async (name, lasName, email, dni, password) =>{
-        const response = await registerData( name, lasName, email, dni, password);
+    const register = async (email, password) =>{
+        const response = await createUserWithEmailAndPassword(auth, email, password);
         console.log(response);
     };
-    const login = async (user, password) => {
-        const response = await signInWithEmailAndPassword(auth, user, password);
+    const login = async (email, password) => {
+        const response = await signInWithEmailAndPassword(auth, email, password);
         console.log(response);
     };
     const logout = async () => {
         const response = await signOut(auth);
         console.log(response)
-    }
+    };
     
     return(
         <AuthContext.Provider 
