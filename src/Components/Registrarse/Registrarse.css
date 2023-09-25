@@ -3,7 +3,6 @@
     justify-content: center;
     text-align: center;
     padding: 30px 0;
-    height: 70vh;
 }
 
 .form_register .titleRegister{
@@ -36,6 +35,9 @@
 }
 
 @media(min-width: 990px){
+    .container_formRegister{
+        height: 70vh;
+    }
     .form_register .form_div{
         display: flex;
         flex-direction: row;
