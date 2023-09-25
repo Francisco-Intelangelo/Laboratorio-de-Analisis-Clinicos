@@ -18,8 +18,11 @@
     font-weight: 500;
     color: #000000;
 }
+.indicador{
+    padding: 10px 20px;
+}
 .accordionContent{
-    padding: 5px;
+    padding: 15px;
     background: #cccccc;
     font-family: 'Poppins';
     font-size: .9em;

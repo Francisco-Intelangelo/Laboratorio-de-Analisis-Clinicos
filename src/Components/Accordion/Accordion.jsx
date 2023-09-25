@@ -11,7 +11,7 @@ const AccordionSection = ({section, isActiveSection, setActiveIndex, sectionInde
         <div>
             <div className="accordionTitle" onClick={toggleSection}>
                 <div>{section.title}</div>
-                <div>{isActiveSection ? "-" : "+"}</div>
+                <div className="indicador">{isActiveSection ? "-" : "+"}</div>
             </div>
             {isActiveSection && <div className="accordionContent">{section.content}</div>}
         </div>

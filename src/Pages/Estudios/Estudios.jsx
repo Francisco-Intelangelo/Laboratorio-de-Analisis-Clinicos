@@ -8,7 +8,7 @@ import {
 export const Estudios = () => {
   return (
     <>
-      <main>
+      <main className="main">
         <h1 className="estudios_title">¿Que estudios realizamos?</h1>
         <div className="estudios_container">
           <div className="estudio_card">
