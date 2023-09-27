@@ -41,7 +41,7 @@ export const Home = () => {
     return (
         <div>
             <div className="containerHome">
-            <h1 className='titleHome'>Bienvenido</h1>
+                <h1 className='titleHome'>Bienvenido</h1>
                 <section className="banner">
                     <Slider/>
                     <div className="buttons">
@@ -53,11 +53,12 @@ export const Home = () => {
                         </li> */}
                     </div>
                 </section>
+                <h2 className='subtituloHome'>Institución</h2>
                 <section className="servicios">
                     <div className="opciones">
-                        <NavLink className="buttonImg" to="/estudios"><img className="img_banner" src={uno} alt='foto' /></NavLink>
-                        <NavLink className="buttonImg" to="/nosotros"><img className="img_banner" src={dos} alt='foto'/></NavLink>
-                        <NavLink className="buttonImg" to="/nosotros"><img className="img_banner" src={tres} alt='foto'/></NavLink>
+                        <img className="img_banner" src={uno} alt='foto' />
+                        <img className="img_banner" src={dos} alt='foto'/>
+                        <img className="img_banner" src={tres} alt='foto'/>
                     </div>
                 </section>
                 <section className="preguntas">

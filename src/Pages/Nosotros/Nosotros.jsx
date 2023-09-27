@@ -8,7 +8,7 @@ export const Nosotros = () => {
             <section className="containerHistoria">
                 <h1 className="tituloQuienes">¿Quienes somos?</h1>
                 <div className="historia">
-                    <h2 className="tituloNosotros">HISTORIA</h2>
+                    <h2 className="tituloNosotros">Historia</h2>
                 </div>
                 <div className="containerTextoHistoria">
                     <p className="textoHistoria">
@@ -48,7 +48,7 @@ export const Nosotros = () => {
                 </div>
             </section>
             <section className="containerProfesionales">
-                    <h3 className="tituloNosotros">PROFESIONALES</h3>
+                    <h3 className="tituloNosotros">Profesionales</h3>
                     <div className="containerNombres">
                         <p className="textoNombres">Algunos de los Profesionales que nos acompañan.</p>
                         <ul className="listaNombres">
@@ -63,7 +63,7 @@ export const Nosotros = () => {
                     </div>
             </section>
             <section className="containerPolitica">
-                <h4 className="tituloNosotros">POLíTICAS DE CALIDAD</h4>
+                <h4 className="tituloNosotros">Políticas de calidad</h4>
                 <p className="textoPolitica">
                     En el Laboratorio de Análisis Clínicos todos los integrantes asumimos
                     el compromiso y la responsabilidad por:

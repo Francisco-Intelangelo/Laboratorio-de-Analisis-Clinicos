@@ -4,16 +4,16 @@
 }
 .accordionItem{
     width: 750px;
-    text-align: justify;
 }
 
 .accordionTitle{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: start;
     cursor: pointer;
     padding: 5px;
-    background: #008FFF;
+    background: #52b2fc;
     font-family: 'Poppins';
     font-size: 1.2em;
     font-weight: 500;
@@ -24,7 +24,8 @@
 }
 .accordionContent{
     padding: 15px;
-    background: #cccccc;
+    background: #e2e2e2;
+    text-align: justify;
     font-family: 'Poppins';
     font-size: .9em;
     color: #000000;
