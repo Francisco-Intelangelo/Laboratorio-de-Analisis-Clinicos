@@ -1,5 +1,5 @@
 
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,49 +9,50 @@ nav{
     top: 0;
     padding: 0 120px;
 }
-nav .active{
+.navbar .active{
     background-color: #1d4ed8;
     border-radius: 20px;
     padding: 0.5rem .8rem;
     color: #ffffff;
 }
-nav .logo_nav{
+.navbar .logo_nav{
     width: 200px;
 }
 
-nav .title{
+.navbar .title{
     margin: 1rem;
 }
-nav ul{
+.navbar ul{
     display: flex;
     margin-top: 1rem;
 }
-nav ul li{
+.navbar ul li{
     list-style: none;
 }
-nav ul li a{
+.navbar ul li a{
     display: block;
     text-decoration: none;
     color: #4E87F7;
     font-family: 'Raleway';
     font-weight: 600;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
-nav ul li .button{
-    padding: 0.5rem 20px;
+.navbar ul li .button{
+    padding: 0.5rem 0.8rem;
     border-radius: 20px;
     background-color: #4EF7BA;
 }
-nav ul li a:not(.active):hover{
+.navbar ul li a:not(.active):hover{
+    padding: 0.5rem 0.8rem;
     background-color: #49dda7;
     border-radius: 20px;
 }
-nav .title:hover{
+.navbar .title:hover{
     background-color: transparent;
 }
-nav .menu{
+.navbar .menu{
     display: none;
     position: absolute;
     top: 1.4rem;
@@ -62,37 +63,37 @@ nav .menu{
     height: 2rem;
     cursor: pointer;
 }
-nav .menu span{
+.navbar .menu span{
     height: 0.4rem;
     width: 100%;
     background-color: #000000;
     border-radius: 0.2rem;
 }
 
-@media(max-width: 900px){
-    nav .menu{
+@media(max-width: 990px){
+    .navbar .menu{
         display: flex;
     }
-    nav{
+    .navbar{
         padding: 0;
         flex-direction: column;
         align-items: center;
     }
-    nav ul{
+    .navbar ul{
         display: none;
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
         padding: 0 100px;
     }
-    nav ul.open{
+    .navbar ul.open{
         display: flex;
     }
-    nav ul li{
+    .navbar ul li{
         width: 100%;
         text-align: center;
     }
-    nav ul li a{
+    .navbar ul li a{
         margin: 0.2rem 0.5rem;
     }
 }

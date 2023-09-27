@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Registrarse.css';
 import { UseAuth } from "../../Context/AuthContext";
+import { NavLink } from 'react-router-dom';
 
 export const Registrarse = () => {
     const auth = UseAuth()
@@ -8,8 +9,7 @@ export const Registrarse = () => {
     const [emailRegister, setEmailRegister] = useState("");
     const [passwordRegister, setPasswordRegister] = useState("");
 
-    const handleRegister = (e)=> {
-        e.preventDefault();
+    const handleRegister = ()=> {
         auth.register(emailRegister, passwordRegister);
     };
 
@@ -77,7 +77,7 @@ export const Registrarse = () => {
                         </div>
                     </div>
                     <div className='container_button'>
-                        <button onClick={(e)=> handleRegister(e)} type="submit" className='send'>Registrarse</button>
+                        <NavLink to="/ingresar" onClick={()=> handleRegister()}  type="submit" className='send'>Registrarse</NavLink>
                     </div>
                 </form>
             </div>

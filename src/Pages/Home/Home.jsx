@@ -45,19 +45,19 @@ export const Home = () => {
                 <section className="banner">
                     <Slider/>
                     <div className="buttons">
-                        <li className="sacar-turno">
-                            <NavLink to="/estudios">SACAR TURNO</NavLink>
+                        <li className="solicitar-turno">
+                            <NavLink className="button" to="/estudios">SOLICITAR TURNO</NavLink>
                         </li>
-                        <li className="ver-resultados">
+                        {/* <li className="ver-resultados">
                             <NavLink to="/ingresar">VER RESULTADOS</NavLink>
-                        </li>
+                        </li> */}
                     </div>
                 </section>
                 <section className="servicios">
                     <div className="opciones">
-                        <img className="img_banner" src={uno} alt='foto'/>
-                        <img className="img_banner" src={dos} alt='foto'/>
-                        <img className="img_banner" src={tres} alt='foto'/>
+                        <NavLink className="buttonImg" to="/estudios"><img className="img_banner" src={uno} alt='foto' /></NavLink>
+                        <NavLink className="buttonImg" to="/nosotros"><img className="img_banner" src={dos} alt='foto'/></NavLink>
+                        <NavLink className="buttonImg" to="/nosotros"><img className="img_banner" src={tres} alt='foto'/></NavLink>
                     </div>
                 </section>
                 <section className="preguntas">

@@ -8,7 +8,7 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <nav>
+        <nav className='navbar'>
             <Link to="/" className='title'><img src={Logo} className='logo_nav' alt='Logo'/></Link>
             <div className='menu' onClick={() => {
                 setMenuOpen(!menuOpen)
@@ -28,11 +28,14 @@ export const Navbar = () => {
                     <NavLink to="/nosotros">Nosotros</NavLink>
                 </li>
                 <li>
+                    <NavLink to="/contacto">Contacto/Horarios</NavLink>
+                </li>
+                {/* <li>
                     <NavLink to="/registrarse" className='button'>Registrarse</NavLink>
                 </li>
                 <li>
                     <NavLink to="/ingresar" className='button'>Ingresar</NavLink>
-                </li>
+                </li> */}
             </ul>
         </nav>
     )

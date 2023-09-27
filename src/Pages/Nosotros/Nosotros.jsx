@@ -1,26 +1,28 @@
 import "./Nosotros.css";
+import silueta from "../../assets/AssetsNosotros/silueta.jpg"
+
 
 export const Nosotros = () => {
     return (
         <div className="containerNosotros">
             <section className="containerHistoria">
-                <h2 className="tituloQuienes">¿Quienes somos?</h2>
+                <h1 className="tituloQuienes">¿Quienes somos?</h1>
                 <div className="historia">
-                    <h3 className="tituloHistoria">HISTORIA</h3>
+                    <h2 className="tituloNosotros">HISTORIA</h2>
                 </div>
                 <div className="containerTextoHistoria">
                     <p className="textoHistoria">
-                        Hace aproximadamente tres décadas, en el año 1993, en una pequeña
-                        comunidad cercana a una ciudad en crecimiento, nació la idea de
+                        En el año 1993, nació la idea de
                         establecer un laboratorio de análisis clínicos que pudiera
-                        proporcionar servicios de alta calidad y confianza a la gente de la
-                        localidad y sus alrededores. Los fundadores de esta iniciativa
+                        proporcionar servicios de alta calidad y confianza a la gente. 
+                        Los fundadores de esta iniciativa
                         fueron el Dr. Ricardo González y la Dra. Ana Martínez, dos
                         profesionales experimentados en el campo de la medicina y la
                         biología. Ambos compartían una visión común de brindar servicios de
                         diagnóstico precisos y confiables a la comunidad, sabiendo que estos
                         desempeñaban un papel crucial en la atención médica y el bienestar
-                        de las personas. El Dr. González, con su especialización en
+                        de las personas.<br/>
+                        El Dr. González, con su especialización en
                         patología clínica y amplia experiencia en laboratorios de renombre,
                         aportaba el conocimiento técnico necesario para establecer un
                         laboratorio de vanguardia. La Dra. Martínez, por otro lado, aportaba
@@ -29,34 +31,39 @@ export const Nosotros = () => {
                         fundadores compartían la filosofía de que la calidad y la precisión
                         eran aspectos inquebrantables en la atención médica, y estaban
                         comprometidos a garantizar que cada análisis clínico realizado en su
-                        laboratorio cumpliera con los más altos estándares de excelencia.
-                        Con esta visión en mente y el apoyo de inversores locales
-                        comprometidos con la mejora de la salud de la comunidad, fundaron el
-                        Laboratorio Clínico. Desde el principio, su objetivo era
-                        claro: proporcionar un lugar donde los pacientes y los profesionales
+                        laboratorio cumpliera con los más altos estándares de excelencia.<br/>
+                        Con esta visión en mente y el apoyo de inversores, fundaron el
+                        Laboratorio Clínico. Con el objetivo claro de: proporcionar un lugar 
+                        donde los pacientes y los profesionales
                         de la salud pudieran confiar plenamente en la precisión de los
-                        análisis clínicos realizados y en la profesionalidad con la que se
+                        análisis y en la profesionalidad con la que se
                         llevaban a cabo. Inversiones en tecnología de punta, formación
                         continua del personal, colaboraciones con expertos médicos locales y
                         un enfoque centrado en el paciente fueron los pilares sobre los que
-                        se edificó este laboratorio. Con el tiempo, el Laboratorio Clínico
-                        Progresar se consolidó como una institución respetada en la
-                        comunidad, reconocida por su integridad, precisión y compromiso con
-                        el bienestar de las personas. A través de los años, el laboratorio
-                        ha seguido evolucionando y adaptándose a los avances científicos y
-                        tecnológicos, pero siempre manteniendo su propósito fundamental:
-                        ofrecer confianza y profesionalismo a cada individuo que confía en
-                        ellos para su diagnóstico médico. Con el apoyo de un equipo dedicado
-                        y apasionado, el Laboratorio Clínico Progresar se ha convertido en
-                        un pilar esencial de la atención médica en la región, proporcionando
-                        resultados precisos y confiables que ayudan a los médicos a tomar
-                        decisiones informadas y a los pacientes a recibir el cuidado. que
-                        merecen.
+                        se edificó este laboratorio.<br/>
+                        Con el tiempo, el laboratorio se consolidó como una institución 
+                        respetada en la comunidad, reconocida por su integridad, 
+                        precisión y compromiso con el bienestar de las personas.
                     </p>
                 </div>
             </section>
+            <section className="containerProfesionales">
+                    <h3 className="tituloNosotros">PROFESIONALES</h3>
+                    <div className="containerNombres">
+                        <p className="textoNombres">Algunos de los Profesionales que nos acompañan.</p>
+                        <ul className="listaNombres">
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Téc. Rodrigo García</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Dr. Alejandro Gómez</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Bioq. Daniel Sánchez</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Vet. Pablo Molteni</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Dra. Laura Martinez</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Bioq. Sofía Rodríguez</li>
+                            <li className="li"><img src={silueta} className="silueta" alt="foto doctor"/>Vet. Estefanía Rosillo</li>
+                        </ul>
+                    </div>
+            </section>
             <section className="containerPolitica">
-                <h3 className="tituloPolitica">POLíTICA DE CALIDAD</h3>
+                <h4 className="tituloNosotros">POLíTICAS DE CALIDAD</h4>
                 <p className="textoPolitica">
                     En el Laboratorio de Análisis Clínicos todos los integrantes asumimos
                     el compromiso y la responsabilidad por:

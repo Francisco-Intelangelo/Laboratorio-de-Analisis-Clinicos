@@ -15,7 +15,7 @@
     color: #060F6F;
     padding: 30px 0;
 }
-.tituloHistoria{
+.tituloNosotros{
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 2em;
@@ -27,20 +27,43 @@
 }
 .textoHistoria{
     text-align: justify;
-    padding: 0 0 50px;
     font-family: 'Poppins';
     font-size: 1em;
     color: #000000;
     width: 90%;
 }
+
+.containerProfesionales{
+    text-align: center;
+    margin: 30px 0;
+}
+.containerNombres .textoNombres{
+    font-family: 'Poppins';
+    font-size: 1em;
+    color: #000000;
+}
+.listaNombres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+.li{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 1em;
+    color: #000000;
+}
+.silueta{
+    margin-right: 30px;
+    width: 3em;
+}
+
 .containerPolitica{
     text-align: center;
-}
-.tituloPolitica{
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 2em;
-    color: #060F6F;
 }
 .textoPolitica{
     padding: 0 0 20px;
@@ -69,7 +92,6 @@
 }
 @media (min-width: 900px) {
     .textoHistoria{
-        padding: 0 30px 50px;
         width: 60%;
     }
     .containerPuntos{
