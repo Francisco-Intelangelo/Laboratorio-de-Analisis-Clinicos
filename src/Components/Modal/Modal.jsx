@@ -360,11 +360,11 @@ const Boton = styled.button`
     border-radius: 100px;
     color: #fff;
     border: none;
-    background: #1766dc;
+    background: #0066ff;
     curson: pointer;
     transition: .3s ease all;
 
     &:hover{
-        background:#0066ff;
+        background:#4E87F7;
     }
 `;

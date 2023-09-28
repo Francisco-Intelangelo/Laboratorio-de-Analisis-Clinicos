@@ -52,13 +52,13 @@ const EncabezadoModal = styled.div`
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #4E87F7;
 
     h3{
         font-family: 'Raleway';
         font-weight: 600;
         font-size: 16px;
-        color: #1766dc
+        color: #4E87F7;
     }
 `;
 const BotonCerrar = styled.button`
@@ -72,7 +72,7 @@ const BotonCerrar = styled.button`
     cursor: pointer;
     transition: .3s ease all;
     border-radius: 5px;
-    color: #1766dc;
+    color: #4E87F7;
     
     svg{
         width: 100%;

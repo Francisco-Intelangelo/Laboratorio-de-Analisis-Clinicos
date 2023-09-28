@@ -9,12 +9,8 @@
     width: 40%;
     border-radius: 20px;
 }
-@media(max-width: 900px){
+@media(max-width: 600px){
     .carousel .carousel-inner{
         width: 100%;
     }
-    .carousel-control-prev, .carousel-control-next{
-        visibility: hidden;
-    }
-    
 }
