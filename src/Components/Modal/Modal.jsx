@@ -24,6 +24,7 @@ const Modal = () => {
     return (
         <div>
             <ContenedorBotones>
+                <Lista>
                 <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Hemograma</Boton>
                 <Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>LDL</Boton>
                 <Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>HDL</Boton>
@@ -32,6 +33,8 @@ const Modal = () => {
                 <Boton onClick={() => cambiarEstadoModal6(!estadoModal6)}>Glucosa</Boton>
                 <Boton onClick={() => cambiarEstadoModal7(!estadoModal7)}>Voriconazol</Boton>
                 <Boton onClick={() => cambiarEstadoModal8(!estadoModal8)}>Acetona</Boton>
+                </Lista>
+                <Lista>
                 <Boton onClick={() => cambiarEstadoModal9(!estadoModal9)}>Acido Base</Boton>
                 <Boton onClick={() => cambiarEstadoModal10(!estadoModal10)}>Ciclosporina</Boton>
                 <Boton onClick={() => cambiarEstadoModal11(!estadoModal11)}>Elastasa</Boton>
@@ -41,6 +44,7 @@ const Modal = () => {
                 <Boton onClick={() => cambiarEstadoModal15(!estadoModal15)}>Iodo - Orina</Boton>
                 <Boton onClick={() => cambiarEstadoModal16(!estadoModal16)}>Microalbuminuria</Boton>
                 <Boton onClick={() => cambiarEstadoModal17(!estadoModal17)}>Lipasa</Boton>
+                </Lista>
             </ContenedorBotones>
 
             {/*Hemograma*/}
@@ -348,20 +352,32 @@ const Modal = () => {
 export default Modal;
 
 const ContenedorBotones = styled.div`
-    padding: 40px;
+    padding: 20px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+`;
+const Lista = styled.ul`
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    @media( min-width: 600px){
+        padding: 0 30px;
+    }
+    
 `;
 const Boton = styled.button`
     display:block;
     padding: 10px 30px;
+    margin: 10px 0;
     border-radius: 100px;
     color: #fff;
     border: none;
     background: #0066ff;
     curson: pointer;
+    width: 15em;
     transition: .3s ease all;
 
     &:hover{

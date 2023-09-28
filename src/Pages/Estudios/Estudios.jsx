@@ -6,7 +6,7 @@ export const Estudios = () => {
     <>
       <main className="main">
         <h1 className="estudios_title">¿Que estudios realizamos?</h1>
-        <p>Presione los botones para mas informacion</p>
+        <p className="textoEstudios">Presione los botones para mas informacion</p>
         <div className="containerModal">
             <Modal/>
         </div>
