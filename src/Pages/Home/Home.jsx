@@ -46,7 +46,7 @@ export const Home = () => {
                     <Slider/>
                     <div className="buttons">
                         <li className="solicitar-turno">
-                            <NavLink className="button" to="/estudios">SOLICITAR TURNO</NavLink>
+                            <NavLink className="button" to="/contacto">SOLICITAR TURNO</NavLink>
                         </li>
                         {/* <li className="ver-resultados">
                             <NavLink to="/ingresar">VER RESULTADOS</NavLink>
