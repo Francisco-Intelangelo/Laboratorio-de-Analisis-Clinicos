@@ -18,6 +18,58 @@
     font-family: 'Raleway';
     padding-bottom: 30px;
 }
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    flex-direction: column;
+    border: 1px solid #686868;
+    background: #b8b8b8;
+    border-radius: 20px;
+}
+.labelForm{
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: 500;
+    color: #1d4ed8;
+    padding: 5px 0;
+}
+.inputForm{
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+}
+.textarea{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+.buttonForm{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;;
+    font-family: 'Raleway';
+    font-weight: 600;
+    border: none;
+    padding: 10px 100px;
+    margin-top: 60px;
+    background: #0066ff;
+    border-radius: 20px;
+}
+.buttonForm:hover{
+    background: #4E87F7;
+}
+
 .tituloHorarios{
     color:#060F6F;
     font-weight: 600;
@@ -26,7 +78,6 @@
     font-family: 'Raleway';
     padding-bottom: 30px;
 }
-
 .estudios_solicitaTurno_white_cont{
     display: flex;
     gap: 10px;
@@ -38,16 +89,16 @@
     margin-bottom: 30px;
 
 }
-
-
 .text_horarios{
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 1em;
 }
 
-
 @media (min-width: 990px){
+    .formContainer{
+        padding: 50px 50px;
+    }
     .estudios_solicitaTurno_white{
         display: flex;
         flex-direction: column;

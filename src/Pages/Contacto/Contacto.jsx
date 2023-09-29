@@ -10,8 +10,18 @@ export const Contacto = () => {
         <div className="estudios_solicitaTurno">
             <section className="containerContacto">
                 <h1 className="tituloContacto">Contacto</h1>
-                <form className="form">
-                    
+                <form className="form" action="https://formsubmit.co/franciscointelangelo@gmail.com" method="POST">
+                    <div className="formContainer">
+                        <label className="labelForm">Nombre:</label>
+                        <input className="inputForm" type="text" name="name" placeholder="Nombre y Apellido" required/>
+
+                        <label className="labelForm">Email:</label>
+                        <input className="inputForm" type="email" name="email" placeholder="email@email.com" required/>
+
+                        <label className="labelForm">Mensaje:</label>
+                        <textarea className="textarea" name="message" id="message" cols="45" rows="7" placeholder="Mensaje..."></textarea>
+                        <button className="buttonForm" type="submit">Enviar</button>
+                    </div>
                 </form>
             </section>
             <section className="estudios_solicitaTurno_white">
