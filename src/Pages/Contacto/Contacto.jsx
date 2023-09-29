@@ -19,7 +19,7 @@ export const Contacto = () => {
                         <input className="inputForm" type="email" name="email" placeholder="email@email.com" required/>
 
                         <label className="labelForm">Mensaje:</label>
-                        <textarea className="textarea" name="message" id="message" cols="45" rows="7" placeholder="Mensaje..."></textarea>
+                        <textarea className="textarea" name="message" id="message" cols="38" rows="7" placeholder="Mensaje..."></textarea>
                         <button className="buttonForm" type="submit">Enviar</button>
                     </div>
                 </form>
