@@ -1,3 +1,1 @@
-# Laboratorio de análisis clínicos
-
-Link web site: (https://analisisclinicos.netlify.app/)
+# [Laboratorio de análisis clínicos](https://analisisclinicos.netlify.app/)
